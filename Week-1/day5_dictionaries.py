@@ -1,4 +1,30 @@
-"""
+
+
+
+car = {
+    "car 1": {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    },
+    "car 2": {
+        "brand": "BMW",
+        "model": "X5",
+        "year": 2020
+    }
+}
+
+x = car.keys()
+y=car.values()
+
+print (y)
+print(x) #before the change
+
+car["color"] = "white"
+
+print(x) #after the change
+print (y)
+
 employees = {
     "emp1": {
         "name": "Ali",
@@ -32,9 +58,9 @@ unique_visitors = set(visitors)
 print(f"Total visits: {len(visitors)}")
 print(f"Unique visitors: {len(unique_visitors)}")
 print(unique_visitors)
-"""
 
-"""
+
+
 ####### Task 1: Create a dictionary for a person with keys like name, age, city, degree, and gpa. Then print out the person's information in a formatted string.
 Person = {
     "p1": {
@@ -48,9 +74,9 @@ Person = {
 print (Person["p1"].keys())
 print (Person["p1"].values())
 print (f"My name is {Person['p1']['name']} and I am {Person['p1']['age']} years old. I live in {Person['p1']['city']} and I have a degree in {Person['p1']['degree']} with a GPA of {Person['p1']['gpa']}.")
-"""
+
 ######
-""" Task 2: Create a dictionary for a student with keys like id, name, and marks. Then write a loop to check if the student has passed or failed based on their marks (pass mark is 50).    
+#Task 2: Create a dictionary for a student with keys like id, name, and marks. Then write a loop to check if the student has passed or failed based on their marks (pass mark is 50).    
 
 Student ={
     "s1": {
@@ -82,11 +108,11 @@ for student_id, info in Student.items():
         print("  Status: Pass")
     else:
         print("  Status: Fail")
-   """   
+
   
 ############### Task` 3: Create a set of unique programming languages from a list that contains duplicates. Then add a new language to the set and check if a specific language is in the set.  
 
-"""
+
 
 tags = ["python", "ai", "python", "automation", 
         "ai", "python", "n8n", "automation"]
@@ -99,7 +125,7 @@ print(unique_tags,end=" ")
 print(len(unique_tags))
 if "n8n" in unique_tags:
     print("n8n is in the set of unique tags.")
-    """
+    
 
 ################## Task 4: Create a dictionary of contacts with names as keys and phone numbers as values. Then write a loop to allow the user to search for a contact's phone number by name. If the name is not found, print a message saying so.
 

@@ -37,3 +37,33 @@ def myfunc():
 myfunc()
 
 print("Python is " + x)
+
+#
+# Day 1 - Python Basics
+# Name: Huzaifa Kundi
+# Date: Day 1 of 90
+
+# Variables
+name = "Huzaifa"
+age = 24
+city = "Chashma"
+gpa = 3.3
+is_student = True
+
+# Print
+print("Hello World!")
+print(f"My name is {name} and I am {age} years old")
+print(f"I live in {city} with a GPA of {gpa}")
+print(f"Am I a student? {is_student}")
+
+# Data types
+print(type(name))    # str
+print(type(age))     # int
+print(type(gpa))     # float
+print(type(is_student))  # bool
+
+# Basic math
+print(5 + 3)
+print(10 - 4)
+print(3 * 4)
+print(10 / 2)

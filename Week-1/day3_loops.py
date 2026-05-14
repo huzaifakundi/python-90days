@@ -1,17 +1,17 @@
 # Multiplication Table Generator
-"""
+
 def Table(num):
     for i in range(1, 11):
         print(f"{num} x {i} = {num * i}")
 print("Welcome to the Multiplication Table Generator!")
 number = int(input("Enter a number to see its multiplication table: "))
 Table(number)
-"""
-"""
+
+
 
 #BMI Calculator
 def calculate_bmi(weight, height):
-    bmi = (weight*703) / (height ** 2)
+    bmi = weight / (height ** 2)
     return bmi
 def prt(bmi):
     if bmi < 18.5:
@@ -24,12 +24,12 @@ def prt(bmi):
         return "Obese"
 print("Welcome to the BMI Calculator!")
 weight = float(input("Enter your weight in kilograms: "))     
-height = float(input("Enter your height in feets: "))
+height = float(input("Enter your height in meters: "))
 bmi = calculate_bmi(weight, height)
 print(f"Your BMI is: {bmi:.2f}")
 print(f"Your weight category is: {prt(bmi)}")
-"""
-"""
+
+
 class Person:
     def __init__(self,Name,Age):
         self.name =  Name
@@ -38,4 +38,10 @@ class Person:
         print(f"Hello, my name is {self.name}")
 p1 = Person("John", 30)
 p1.greet()
-"""
+
+###########Timer###############
+import time
+for i in range (10,0,-1):
+    print(f"{i} seconds remaining")
+    time.sleep(1)
+print("Time's up!")

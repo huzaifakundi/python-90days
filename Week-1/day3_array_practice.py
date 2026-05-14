@@ -1,23 +1,28 @@
-car = {
-    "car 1": {
-        "brand": "Ford",
-        "model": "Mustang",
-        "year": 1964
-    },
-    "car 2": {
-        "brand": "BMW",
-        "model": "X5",
-        "year": 2020
-    }
-}
+# Day 3 - List/Array Practice
 
-x = car.keys()
-y=car.values()
+fruits = ["apple", "banana", "cherry", "mango"]
 
-print (y)
-print(x) #before the change
+# Indexing
+print(fruits[0])      # first
+print(fruits[-1])     # last
 
-car["color"] = "white"
+# Slicing
+print(fruits[1:3])    # banana, cherry
 
-print(x) #after the change
-print (y)
+# Methods
+fruits.append("grape")
+fruits.remove("apple")
+print(fruits)
+print(len(fruits))
+
+# Looping through list
+for fruit in fruits:
+    print(fruit.upper())
+
+# List with numbers
+numbers = [5, 2, 8, 1, 9, 3]
+print(max(numbers))
+print(min(numbers))
+print(sum(numbers))
+print(sorted(numbers))
+
